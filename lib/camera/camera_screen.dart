@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:senyumin_flutter/camera/detect_img.dart';
+import 'package:senyumin_flutter/respons/respons.dart';
 
 class CameraScreen extends StatefulWidget {
   @override
@@ -193,7 +194,7 @@ class _CameraScreenState extends State {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => DetectImage(imagePath: path),
+          builder: (context) => Respons(),
         ),
       );
     } catch (e) {

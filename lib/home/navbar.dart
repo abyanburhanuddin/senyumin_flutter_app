@@ -12,9 +12,9 @@ class _NavbarState extends State<Navbar> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     Home(),
-    //PlaceholderWidget(Colors.white),
-    //History(),
-    //Profile(),
+    Home(),
+    Home(),
+    Home()
   ];
   @override
   Widget build(BuildContext context) {

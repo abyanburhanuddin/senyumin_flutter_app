@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:senyumin_flutter/constans/dialogConstant.dart';
+import 'package:senyumin_flutter/home/navbar.dart';
 
 class Respons extends StatefulWidget {
   @override
@@ -89,10 +90,9 @@ class _ResponsState extends State<Respons> {
               height: 38,
               child: FlatButton(
                 onPressed: () {
-                  /*Navigator.push(context,
-                                      MaterialPageRoute(builder: (context) {
-                                    return Assessement();
-                                  }));*/
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Navbar();
+                  }));
                 },
                 child: Text("Butuh Dukungan",
                     style: GoogleFonts.montserrat(
@@ -103,9 +103,8 @@ class _ResponsState extends State<Respons> {
                 color: Colors.transparent,
                 splashColor: Color(0xFFFED47E),
                 shape: RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(10.0),
-                  side :BorderSide(color : Color(0xFFAF64FA) )
-                ),
+                    borderRadius: new BorderRadius.circular(10.0),
+                    side: BorderSide(color: Color(0xFFAF64FA))),
               ),
             ),
             ButtonTheme(
@@ -113,10 +112,9 @@ class _ResponsState extends State<Respons> {
               height: 38,
               child: FlatButton(
                 onPressed: () {
-                  /*Navigator.push(context,
-                                      MaterialPageRoute(builder: (context) {
-                                    return Assessement();
-                                  }));*/
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return Navbar();
+                  }));
                 },
                 child: Text("Kembali ke Beranda",
                     style: GoogleFonts.montserrat(
